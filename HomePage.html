@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Asociatia Linistea Dintre Nuci</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body style="background-color: rgb(255, 255, 255);">
+    <nav id="navbar">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <i  class="logo"><img src="d:\Asociatie site\LogoA.png" alt="Logo"></i>
+      <div class="title"><p style="margin-left: 25%;">Asociația</p>"Liniștea dintre nuci"</div>
+      <ul>
+        <li><a class="active" href="HomePage.html">Acasă</a></li>
+        <li><a href="Proiecte.html">Proiecte</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+   
+    <!-- 
+    <div class="image-container">
+      <img src="d:/Asociatie site/poza_batrani2.jpg" alt="Background image">
+      <h1>Asociația "Liniștea dintre nuci"</h1>
+  </div>
+-->
+
+
+  <section>
+    <div class="section-container">
+      <img src="d:/Asociatie site/poza_batrani.jpg" alt="Care image">
+      <div class="content">
+        <h2>Avem grijă de liniștea ta..</h2>
+        <p>Descoperă mai multe despre activitățile noastre și cum aducem liniște în viețile oamenilor.</p>
+        <a href="Proiecte.html" class="btn">Descoperă</a>
+      </div>
+    </div>
+  </section>
+
+<div class="citat">
+  <p>"Unii oameni, indiferent cât de mult îmbătrânesc, nu-și pierd
+    niciodată frumusețea, ci doar și-o mută de pe fețe în inimile lor."
+    </p>
+    <br>
+  <p>- Martin Buxbaum</p>
+
+</div>
+<br>
+<div class="containersc">
+  <div class="scop">
+    <p> Scopul Asociației ”Liniștea dintre nuci”: <b>Susținerea persoanelor vulnerabile. </b> </p>
+    <p>Misiunea noastră este să construim și să punem în funcțiune un cămin pentru persoane vârstnice.</p>
+  </div>
+
+  <div class="contact">
+    <p> <b>Contactează-ne:</b> </p>
+    <br>
+    <p>
+      <a style="color: rgb(186, 72, 72); font-family: Arial, Helvetica, sans-serif;" href="tel:+40740801869">0740801869</a>
+      <button class="copy-btn" onclick="copyToClipboard('0740801869')" title="Copy to clipboard">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+          <path d="M10 1.5H6a.5.5 0 0 0-.5.5v.5H4a2 2 0 0 0-2 2V13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-1.5V2a.5.5 0 0 0-.5-.5Zm0 1H6v-.5h4V2.5ZM4 4h8a1 1 0 0 1 1 1V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/>
+        </svg>
+      </button>
+    </p>
+    <p>
+      <a style="color: rgb(186, 72, 72);" href="mailto:asociatialanuci@gmail.com">asociatialanuci@gmail.com</a>
+      <button class="copy-btn" onclick="copyToClipboard('asociatialanuci@gmail.com')" title="Copy to clipboard">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+          <path d="M10 1.5H6a.5.5 0 0 0-.5.5v.5H4a2 2 0 0 0-2 2V13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-1.5V2a.5.5 0 0 0-.5-.5Zm0 1H6v-.5h4V2.5ZM4 4h8a1 1 0 0 1 1 1V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/>
+        </svg>
+      </button>
+    </p>
+  </div>
+</div>
+<br>
+<div> <a style="margin:10%" href="https://www.termsfeed.com/live/720cb7f8-029c-4c04-af56-45f011556d97">Politica de confidențialitate</a></div>
+<script>
+  function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+          alert("Copied to clipboard: " + text);
+      }).catch(err => {
+          alert("Failed to copy: " + err);
+      });
+  }
+  </script>
+  
+
+
+    <script>
+      // Get elements
+      const checkBtn = document.getElementById('check');
+      const body = document.body;
+
+      // Add event listener to the checkbox
+      checkBtn.addEventListener('change', function() {
+        if (this.checked) {
+          body.classList.add('no-scroll'); // Disable scrolling when checked
+        } else {
+          body.classList.remove('no-scroll'); // Re-enable scrolling when unchecked
+        }
+      });
+    </script>
+    <!-- 
+<footer>
+    <h3 style="color: azure; margin-right: 6%;">Contact</h3>
+    <br>
+   <p><a style="color: azure; margin-right: 6%;" href="tel:+40741312805">0741312805 </a></p>
+   <p> <a style="color: azure;margin-right: 6%;"  href="mailto:sarahbuligamarga@gmail.com"> sarahbuligamarga@gmail.com </a></p>
+  
+</footer>-->
+
+<!-- 
+      <div id="harta">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.331178703547!2d25.899140595150516!3d47.720710135824895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47344d7f69f2b93f%3A0x3ae130666325b22e!2sStrada%20Mihai%20Eminescu!5e0!3m2!1sro!2sro!4v1725741173417!5m2!1sro!2sro" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div> -->
+  </body>
+</html>

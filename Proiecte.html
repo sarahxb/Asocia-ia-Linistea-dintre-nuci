@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Asociatia Linistea Dintre Nuci</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body style="background-color: rgb(255, 255, 255);">
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <i  class="logo"><img src="d:\Asociatie site\LogoA.png" alt="Logo"></i>
+        <div class="title"><p style="margin-left: 25%;">Asociația</p>"Liniștea dintre nuci"</div>
+        <ul>
+          <li><a  href="HomePage.html">Acasă</a></li>
+          <li><a class="active" href="Proiecte.html">Proiecte</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+   
+<div class="titlu">
+<h1>Centru Rezidențial Pentru Persoane Vârstnice</h1>
+</div>
+<br>
+<div style="text-align: center;">
+<button class="button" id="toggleButton">Descoperă</button>
+</div>
+<div class="row" id="photoGrid"> 
+    <div class="column">
+      <img src="d:\Asociatie site\grid_constructie\p1.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p2.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p3.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p4.jpeg">
+    </div>
+    <div class="column">
+      <img src="d:\Asociatie site\grid_constructie\p5.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p6.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p7.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p8.jpeg">
+    </div>  
+    <div class="column">
+      <img src="d:\Asociatie site\grid_constructie\p9.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p10.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\p11.jpeg">
+      <img src="d:\Asociatie site\grid_constructie\motto.png">
+    </div>
+  </div>
+
+
+  <script>
+    // Get references to the button and grid
+    const button = document.getElementById('toggleButton');
+    const grid = document.getElementById('photoGrid');
+  
+    // Add click event listener to the button
+    button.addEventListener('click', () => {
+      // Toggle the visibility of the grid
+      if (grid.style.display === 'flex') {
+        grid.style.display = 'none'; // Hide the grid
+        button.classList.remove('active'); // Remove active class
+      } else {
+        grid.style.display = 'flex'; // Show the grid
+        button.classList.add('active'); // Add active class
+      }
+    });
+  </script>
+
+
+
+
+    <script>
+      // Get elements
+      const checkBtn = document.getElementById('check');
+      const body = document.body;
+
+      // Add event listener to the checkbox
+      checkBtn.addEventListener('change', function() {
+        if (this.checked) {
+          body.classList.add('no-scroll'); // Disable scrolling when checked
+        } else {
+          body.classList.remove('no-scroll'); // Re-enable scrolling when unchecked
+        }
+      });
+    </script>
+<!--<footer>
+    <h3 style="color: azure; margin-right: 6%;">Contact</h3>
+    <br>
+   <p><a style="color: azure; margin-right: 6%;" href="tel:+40741312805">0741312805 </a></p>
+   <p> <a style="color: azure;margin-right: 6%;"  href="mailto:sarahbuligamarga@gmail.com"> sarahbuligamarga@gmail.com </a></p>
+  
+</footer> -->
+  </body>
+</html>
